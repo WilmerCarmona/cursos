@@ -12,6 +12,6 @@ let resultado = 8/2*(2+2); /*Cada vez que se vea una operacion matematica que co
 console.log(resultado);
 
 
-let result = 8/(2*(2+2)); // 2+2 = 4, 2x4 = 8, 8/8 = 1
+let result = 8/(2*(2+2)); // 2+2 = 4, 2x4 = 8, 8/8 = 1; Encerrar en parentetesis las operaciones que quieres que se ejecuten primero 
 
 console.log(result);
