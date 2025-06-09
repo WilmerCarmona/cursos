@@ -13,4 +13,3 @@ while(i < animales.length){
     console.log(animales[i]);
     i++;
 }
-
