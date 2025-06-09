@@ -7,5 +7,12 @@ let user = { id: 1,
 };
 
 for(let prop in user){
-    console.log(prop);
+    console.log(user[prop]);
+};
+
+
+let animal = {id:1, nombre: 'Perro', raza:'Dalmata'};
+
+for(let prop in animal){
+    console.log(animal[prop]);
 }
