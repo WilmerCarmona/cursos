@@ -9,7 +9,7 @@ while(i < 8){
     if(i === 3){ // Si "i" es exactamente igual a 3 entonces el "Continue" permitirá saltar esta iteración
         continue;
     }
-    if (i === 6){ // si "i" es exactamente igual a 6 entonces tal y como lo dice la palabra "break" el codigo saldrá desde esa iteración
+    if (i === 6){ // si "i" es exactamente igual a 6 entonces tal y como lo dice la palabra "break" el codigo saldrá desde esa 
         break;
     }
     console.log('Este numero es: ', i);
