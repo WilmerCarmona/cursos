@@ -16,11 +16,6 @@ for (let prop in user) {
     console.log(user[prop]); // Muestra 1, 'Wilmer', 'Carmona', 22
 }
 
-
-for(let prop in user){
-    console.log(user[prop]);
-};
-
 let animal = {id:1, nombre: 'Perro', raza:'Dalmata'};
 
 for(let prop in animal){
