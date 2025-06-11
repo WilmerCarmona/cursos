@@ -11,7 +11,7 @@ switch(condicion){
         console.log('No se encontró, ninguna condición');
 }
 
-// tambien se puede hacer con la condicion de if else
+// tambien se puede hacer con la condicion de else if
 
 let condition = 'chao';
 
