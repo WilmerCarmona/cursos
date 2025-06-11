@@ -11,3 +11,16 @@ switch(condicion){
         console.log('No se encontró, ninguna condición');
 }
 
+// tambien se puede hacer con la condicion de if else
+
+let condition = 'chao';
+
+ if(condition == 'hola'){
+    console.log('Saludar');
+
+ }else if(condition == 'chao'){
+    console.log('Despedir');
+} else{
+    console.log('No hay niguna condición');
+}
+ 
