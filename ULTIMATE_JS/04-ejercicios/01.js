@@ -20,4 +20,4 @@ console.log(resultado);
    return (a > b)? a : b; //Ternario
  }
  let resul = cualEsSuperior(17,22);
- console.log(resul)
+ console.log('El numero mayor es: ',resul)
