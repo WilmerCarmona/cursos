@@ -23,5 +23,5 @@ function arrayIndice(ar,ind){
     return ar[ind];
 }
 
-let solucion = arrayIndice([1,2,3], 1);
+let solucion = arrayIndice([1,2,3], -1);
 console.log(solucion);
