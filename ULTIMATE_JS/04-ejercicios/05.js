@@ -18,3 +18,33 @@ function getMaxAndMin(arr){
 
 let resultado = getMaxAndMin(array);
 console.log(resultado) // = [-35, 49]
+
+// Ahora ordenando el array y utilizando el metodo de la burbuja
+let arry = [23, 49, -35, 9, -3, 17];
+
+function burbuja(arr) {
+  let n = arr.length;
+  // Hacemos una copia para no modificar el original
+  let copia = [...arr]; 
+
+  for (let i = 0; i < n - 1; i++) {
+    for (let j = 0; j < n - 1 - i; j++) {
+      if (copia[j] > copia[j + 1]) {
+        // Intercambiamos los elementos si están desordenados
+        let temp = copia[j];
+        copia[j] = copia[j + 1];
+        copia[j + 1] = temp;
+      }
+    }
+  }
+
+  return copia; // Ya está ordenado
+}
+
+let ordenado = burbuja(arry);
+let menor = ordenado[0]; // Primer elemento después de ordenar
+let mayor = ordenado[ordenado.length - 1]; // Último elemento
+
+console.log("Array ordenado:", ordenado);
+console.log("Menor:", menor);
+console.log("Mayor:", mayor);
