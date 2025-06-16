@@ -6,8 +6,8 @@ Ejemplo de array normal
     console.log( frutas [1]); //El array normal de llamaría de esta forma
 
 Ejemplo de array de pares
-    let personas = [
-        [1, {nombre: 'Wilmer', apellido: 'Carmona'}], //par uno
-        [2, {nombre: 'Nicolas', apellido: 'Alvarez'}], //par dos
+    let personas = [ // Los pares son un array dentro de otro array, este es el primer array
+        [1, {nombre: 'Wilmer', apellido: 'Carmona'}], //este es el segundo array. Par uno, identificado por el numero 1 
+        [2, {nombre: 'Nicolas', apellido: 'Alvarez'}], //par dos identificado con el numero 2
     ];  
 */
