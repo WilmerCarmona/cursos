@@ -22,5 +22,6 @@ let condition = 'chao';
     console.log('Despedir');
 } else{
     console.log('No hay niguna condición');
-}
+};
+
  
