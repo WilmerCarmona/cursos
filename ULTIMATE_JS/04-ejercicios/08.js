@@ -13,11 +13,19 @@ Ejemplo de array de pares
 */
 
 let animales =[
-    [0,{edad: 2, nombre: 'Oreo', peso: 2.3}],
-    [1,{edad: 1, nombre: 'Pelusa', peso:1.4}],
-    [3,{edad: 4, nombre: 'Tiger', peso: 4.2}],
+    [1,{id: 1, nombre: 'Oreo', peso:1.2}],
+    [2,{id: 2, nombre: 'Pelusa', peso: 2.3}],
+    [3,{id: 3, nombre: 'Tiger', peso: 4.1}],
 ];
 
-function toParis(arr){
-    
+function toPairs(arr){
+    let pairs = [];
+    for(idx in arr){
+        let elemento = arr [idx];
+        pairs[idx] = [elemento.id, elemento];
+    }
+    return pairs
 }
+
+let resultado = toPairs(animales);
+console.log(resultado);
