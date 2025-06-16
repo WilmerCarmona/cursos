@@ -28,4 +28,6 @@ let c = 30;
 
 if (a > b && a > c){
     console.log('El numero',a,' es mayor que el numero',b,'y', c);
-}else if
+}else if(b > a && b > c){
+    console.log('El numero',b,' es mayor que el numero',a,'y', c);
+}
