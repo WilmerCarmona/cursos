@@ -12,10 +12,10 @@ Ejemplo de array de pares
     ];  
 */
 
-let animales =[
-    [1,{id: 1, nombre: 'Oreo', peso:1.2}],
-    [2,{id: 2, nombre: 'Pelusa', peso: 2.3}],
-    [3,{id: 3, nombre: 'Tiger', peso: 4.1}],
+let array =[
+    {id: 1, nombre: 'Oreo', peso:1.2},
+    {id: 2, nombre: 'Pelusa', peso: 2.3},
+    {id: 3, nombre: 'Tiger', peso: 4.1},
 ];
 
 function toPairs(arr){
@@ -27,5 +27,5 @@ function toPairs(arr){
     return pairs
 }
 
-let resultado = toPairs(animales);
+let resultado = toPairs(array);
 console.log(resultado);
