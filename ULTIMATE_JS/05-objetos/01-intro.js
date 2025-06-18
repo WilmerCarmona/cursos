@@ -10,9 +10,11 @@ let direccion = {
 let apellido = 'Carmona';
 
 /*todas esas esas variables y valores los podemos agrupar dentro de un mismo objeto,
-ya que al parecer se trata de un ususario*/
+ya que se encuentran relacionados entre si*/
 
-let usuario = {
+
+// Programación orientada a objetos
+let user = {
     id: 2,
     email: 'nicolasalvarez18@gmail.com',
     name: 'Nicolas',
@@ -24,3 +26,5 @@ let usuario = {
     },
     lastName: 'Alvarez',
 };
+
+console.log(user);
