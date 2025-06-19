@@ -29,7 +29,7 @@ function createUser( name, lastName, email, activo){
         email,
         activo,
         recuperarContraseña: function(){
-            console.log('Recuperando contraseña del usuario: ', user.name, user.lastName);
+            console.log('Recuperando contraseña del usuario: ');
         }
     }
 };
