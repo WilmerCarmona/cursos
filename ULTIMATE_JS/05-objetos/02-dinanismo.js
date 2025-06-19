@@ -26,3 +26,11 @@ const usuario = Object.freeze({id: 2, name: 'Nicolas', lastName: 'Alvarez'});
 usuario.nombre = 'Lasconi'; //ésto no hará ningún cambio, ya que se está usando la función de object.freeze
 
 console.log(usuario);
+
+
+const user2 = Object.seal({id: 3, nom: 'Nicolas', ape: 'Alvarez'});
+
+user2.nom = 'Lasconi'; //Ésto será modificado, ya que con la función seal puedes modificar propiedades existentes
+user2.edad = 17; //Pero si intentamos agregar una propiedad, la funcion seal no lo permitirá
+
+console.log(user2);
