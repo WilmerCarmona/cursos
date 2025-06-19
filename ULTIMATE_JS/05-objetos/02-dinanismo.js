@@ -9,7 +9,7 @@ user.correo = 'wilmercarmona17@gmail.com';
 user.guardar = function(){
     console.log('Guardando', user.correo);
 }
-
+user.nombre = 'Merwil'; // Ahora el nombre cambiará  de 'Wilmer' a 'Merwil'
 user.guardar();
 
 // Como bien lo había dicho al comenzar, así como tambien se puede agragar, tambien se pueden eliminar
@@ -19,3 +19,10 @@ delete user.apellido;
 delete user.guardar;
 
 console.log(user);
+
+//Ahora, esta función de object.freeze sirve para que no le puedas cambiar los valores al objeto de esa variable
+const usuario = Object.freeze({id: 2, name: 'Nicolas', lastName: 'Alvarez'});
+
+usuario.nombre = 'Lasconi'; //ésto no hará ningún cambio, ya que se está usando la función de object.freeze
+
+console.log(usuario);
