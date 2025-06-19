@@ -11,3 +11,11 @@ user.guardar = function(){
 }
 
 user.guardar();
+
+// Como bien lo había dicho al comenzar, así como tambien se puede agragar, tambien se pueden eliminar
+//ejemplo
+
+delete user.apellido;
+delete user.guardar;
+
+console.log(user);
