@@ -5,5 +5,7 @@ function Usuario(){
     }
 }
 let usuario1 = new Usuario();
-console.log(usuario1);
+let usuario2 = new Usuario();
+console.log(usuario1, usuario2);
+
 
