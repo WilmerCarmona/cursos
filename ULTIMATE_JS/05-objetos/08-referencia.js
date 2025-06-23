@@ -31,10 +31,11 @@ y por ésta razón es que f seguiria siendo igual a '1', ya que son variables di
 /*Para que se cumpla lo que intentamos arriba podríamos indicar que la variable 'f' es un objeto, en este caso...
 f va a ser g */
 
-let g = {prop: 10};
+let g = {prop: 10};// g pasa a ser un objeto y va a contener un propiedad(prop), el cual su valor será 10
 
-function suma (n){
-    n.prop++
+function suma (n){// Continuamos con nuestra función suma que tiene un PARAMETRO(n)
+    n.prop++ // A el valor de prop(1o) se la hará un imcremento
 }
-suma(g);
-console.log(g);
+suma(g); /*Y ahora cuando llamamos nuestra función de suma y le pasamos nuestro parametro g, que contiene una propiedad
+(prop: 1), a esa propiedad aumentará  ya que n.prop, hará que esta función se cumpla*/
+console.log(g); // {prop: 11}
