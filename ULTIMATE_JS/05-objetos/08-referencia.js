@@ -14,15 +14,23 @@ console.log(c,e); //Esto mostrará {prop: 2} {prop: 2}, esto pasa porque se esta
 
 // Que pasa con las funciones?
 
-let f = 1;
+let f = 1; // creemos una variable que sea de valor 1
 
-function suma (n){
-    n++
+function suma (n){ // Hagamos un función suma que tenga un PARAMETRO(n)
+    n++ // Aquí solo vamos aumentar el valor de 'n'
 }
-suma(a);
-console.log(a); // así no sumará el valor ya que la variable f es distinta a la variable f
+suma(f); // Luego llamamos a la funcion de suma y le vamos a pasar en su parametro la variable f que tiene de valor 1
 
-//
+console.log(f); /*Podrías creer que esto imprima un 2, ya que a 1 le aumentamos su valor cuando incrementamos 'n'
+pero la realidad es que cada vez que definimos parametros, se va a crear una variable especial para cada parametro,
+por lo tanto la variable 'f' es diferente al parametro que tenemos identificado como 'n' en nuesra función,
+y por ésta razón es que f seguiria siendo igual a '1', ya que son variables distintas*/
+
+
+
+/*Para que se cumpla lo que intentamos arriba podríamos indicar que la variable 'f' es un objeto, en este caso...
+f va a ser g */
+
 let g = {prop: 10};
 
 function suma (n){
