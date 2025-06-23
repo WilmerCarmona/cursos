@@ -22,7 +22,7 @@ console.log(resultado) // = [-35, 49]
 // Ahora ordenando el array y utilizando el metodo de la burbuja
 let arry = [23, 49, -35, 9, -3, 17];
 
-function burbuja(arr) {
+function ordenar(arr) {
   let n = arr.length;
   // Hacemos una copia para no modificar el original
   let copia = [...arr]; 
@@ -41,7 +41,7 @@ function burbuja(arr) {
   return copia; // Ya está ordenado
 }
 
-let ordenado = burbuja(arry);
+let ordenado = ordenar(arry);
 let menor = ordenado[0]; // Primer elemento después de ordenar
 let mayor = ordenado[ordenado.length - 1]; // Último elemento
 
