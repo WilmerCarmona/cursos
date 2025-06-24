@@ -20,3 +20,14 @@ const saludar = (nombre) => {
 };
 
 saludar("Wilmer"); // Wilmer
+
+//3
+function ejemplo() {
+  let x = 10;
+  if (true) {
+    let y = 5;
+    console.log(x); // Se puede
+  }
+  console.log(y); // Y está fuera de alcance
+}
+
