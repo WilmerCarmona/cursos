@@ -9,5 +9,14 @@ class Persona{ //Se crea una clase persona
     }
 }
 
-const persona = new Persona('Wilmer','Carmona', 21); //Se crea una constante de una persona Que será una 
-persona.saludar();
+const persona = new Persona('Wilmer','Carmona', 21); //Se crea una constante de una persona la cual será una instancia de Persona
+const persona2 = new Persona('Nicolas', 'Alvarez', 20);
+persona.saludar(); 
+persona2.saludar();
+
+
+const saludar = (nombre) => {
+  console.log(`Hola ${nombre}`);
+};
+
+saludar("Wilmer"); // Wilmer
