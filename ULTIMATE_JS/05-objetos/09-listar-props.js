@@ -10,7 +10,7 @@ const puntos = {
     }
 };
 
-delete puntos.dibujar;//Aquí se está eliminando el método. Podemos comentar esta linea para verificar si existe el método
+//delete puntos.dibujar;//Aquí se está eliminando el método. Podemos comentar y descomentar esta linea para verificar
 //puntos.dibujar(); //esto perfectamente va a mostrar el metodo de dibujar(), pero y si ese método ha sido eliminado? ↑
 
 //Entonces podriamos hacer in condicional para preguntas si existe ese método
@@ -18,4 +18,20 @@ if('dibujar' in puntos){// Se pasa el nombre del método de forma tipo string ('
     puntos.dibujar();
 }else{
     console.log('No se encuentra un método con ese éste nombre');
+}
+
+// De esta forma podemos acceder para listar todos los valores de las propiedades del objeto 
+
+//let keys = Object.keys(puntos);
+//console.log(Object.keys(puntos));
+for(let llave of Object.keys(puntos)){ // esto nos va a listar la propiedad seguido de su valor 
+    console.log(llave, puntos[llave]);
+}
+
+for(let entry of Object.entries(puntos)){ 
+    console.log(entry);
+}
+
+for(let llav in puntos){ //esta es nueva
+    console.log(llav, puntos[llav]);
 }
