@@ -33,7 +33,7 @@ f va a ser g */
 
 let g = {prop: 10};// g pasa a ser un objeto y va a contener un propiedad(prop), el cual su valor será 10
 
-function suma (n){// Continuamos con nuestra función suma que tiene un PARAMETRO(n)
+function suma (n){// le pasamos una referencia a nuestra función suma que tiene un PARAMETRO(n)
     n.prop++ // A el valor de prop(1o) se la hará un imcremento
 }
 suma(g); /*Y ahora cuando llamamos nuestra función de suma y le pasamos nuestro parametro g, que contiene una propiedad
