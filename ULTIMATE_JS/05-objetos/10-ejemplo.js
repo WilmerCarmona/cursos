@@ -14,20 +14,28 @@ const persona2 = new Persona('Nicolas', 'Alvarez', 20);
 persona.saludar(); 
 persona2.saludar();
 
-
+//Son una forma más corta de escribir funciones, y no cambian el this como las normales
 const saludar = (nombre) => {
   console.log(`Hola ${nombre}`);
 };
 
 saludar("Wilmer"); // Wilmer
 
-//3
-function ejemplo() {
-  let x = 10;
-  if (true) {
-    let y = 5;
-    console.log(x); // Se puede
-  }
-  console.log(y); // Y está fuera de alcance
-}
+//Tipos de scope
 
+//Scope global 
+
+let nombre = 'Wilmer';
+
+function saludarGlobal(){
+  console.log('Hola, soy ' + nombre);
+}
+saludarGlobal();
+
+//Scope función
+
+function saludarFuncion(){
+  let edad = 21;
+  console.log('Tengo '+edad,'años');
+}
+saludarFuncion();
