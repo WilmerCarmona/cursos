@@ -36,6 +36,8 @@ saludarGlobal();
 
 function saludarFuncion(){
   let edad = 21;
-  console.log('Tengo '+edad,'años');
+  console.log('Tengo '+edad,'años'); // La variable está dentro de la función, por lo tanto se verá rejada
 }
 saludarFuncion();
+console.log('Tengo ',+edad,'años'); // La variable está fuera de la función, por lo tanto NO se verá rejada
+
