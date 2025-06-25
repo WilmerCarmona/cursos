@@ -49,4 +49,16 @@ if(true){
   console.log('Hola, soy ', nom, ape);
 }
 
-console.log('Hola, soy ', nom, ape);// Las variables estan fuera de el bloque {}, por lo tanto NO se verá rejada
+//console.log('Hola, soy ', nom, ape);// Las variables estan fuera de el bloque {}, por lo tanto NO se verá rejada
+
+
+fetch("https://pokeapi.co/api/v2/pokemon/snorlax") // fetch() lo que hace es llamar a un servidor por su URL
+
+  .then(res => res.json()) /*.then Es parte de algo llamado una promise. Una promesa es una operación que toma tiempo 
+        (como pedirle datos a un servidor) y cuando termina, puedes hacer algo con el resultado.
+        Y .json Convierte la respuesta en formato JSON a un objeto JavaScript*/
+  .then(data => {
+    console.log("Nombre:", data.name);
+    console.log("Altura:", data.height);
+    console.log("Peso:", data.weight);
+  });
