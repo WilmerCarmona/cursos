@@ -36,8 +36,17 @@ saludarGlobal();
 
 function saludarFuncion(){
   let edad = 21;
-  console.log('Tengo '+edad,'años'); // La variable está dentro de la función, por lo tanto se verá rejada
+  console.log('Tengo ', edad,'años'); // La variable está dentro de la función, por lo tanto se verá rejada
 }
 saludarFuncion();
-console.log('Tengo ',+edad,'años'); // La variable está fuera de la función, por lo tanto NO se verá rejada
+//console.log('Tengo ',+edad,'años'); // La variable está fuera de la función, por lo tanto NO se verá rejada
 
+//Scope de bloque 
+
+if(true){
+  let nom = 'Wilmer';
+  let ape = 'Carmona';
+  console.log('Hola, soy ', nom, ape);
+}
+
+console.log('Hola, soy ', nom, ape);// Las variables estan fuera de el bloque {}, por lo tanto NO se verá rejada
