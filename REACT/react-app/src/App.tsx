@@ -1,9 +1,7 @@
-function App(){
-  const nombre = '';
-  if(nombre){
-  return <p>Hola {nombre}</p>
-  }
-  return <p>Hola mundo</p>;
+import Titulo from "./titulo";
+
+function App() {
+  return <Titulo />;
 }
 
 export default App;
