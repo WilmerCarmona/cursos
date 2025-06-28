@@ -1,5 +1,6 @@
 function App(){
-  return <p>Hola mundo</p>;
+  const nombre = 'Wilmer';
+  return <p>Hola {nombre}</p>;
 }
 
 export default App;
