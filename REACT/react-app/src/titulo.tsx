@@ -1,8 +1,8 @@
 function Titulo() {
-  const nombre = "Nicolas";
+  const nombre = "Wilmer";
   if (nombre) {
-    return <p>Hola {nombre}</p>;
+    return <h1>Hola {nombre}</h1>;
   }
-  return <p>Hola mundo</p>;
+  return <h1>Hola mundo</h1>;
 }
 export default Titulo;
