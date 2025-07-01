@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 
 interface Props {
-  body: number;
+  body: string;
 }
 function Card(props: Props) {
   const { body } = props;
