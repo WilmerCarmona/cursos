@@ -28,9 +28,6 @@ export function CardBody(props: CardBodyProps) {
       {/*La etiqueta de Fragment tambien se puede colocar de ésta forma: (<> </>) */}
       <h5 className="card-title">{title}</h5>
       <p className="card-text">{text}</p>
-      <a href="#" className="btn btn-primary">
-        Go somewhere
-      </a>
     </Fragment>
   );
 }
