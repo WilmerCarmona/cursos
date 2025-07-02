@@ -1,7 +1,11 @@
 import Card, { CardBody } from "./components/Card";
 
 function App() {
-  return <Card body="Hola mundo" />;
+  return (
+    <Card>
+      <CardBody title="Ésto es un titulo" text="Ésto es un texto" />
+    </Card>
+  );
 }
 
 export default App;
