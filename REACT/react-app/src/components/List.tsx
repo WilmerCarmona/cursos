@@ -4,7 +4,9 @@ function List({ data }: Props) {
   return (
     <ul className="list-group">
       {data.map((elemento) => (
-        <li className="list-group-item">{elemento}</li>
+        <li key={elemento} className="list-group-item">
+          {elemento}
+        </li>
       ))}
     </ul>
   );
