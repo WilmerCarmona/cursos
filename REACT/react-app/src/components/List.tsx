@@ -1,5 +1,3 @@
-import { MouseEvent } from "react";
-
 type Props = { data: string[] };
 
 function List({ data }: Props) {
