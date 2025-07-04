@@ -10,7 +10,7 @@ function List({ data }: Props) {
         <li
           onClick={() => handleClick(elemento)}
           key={elemento}
-          className="list-group-"
+          className="list-group-item"
         >
           {elemento}
         </li>
