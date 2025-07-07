@@ -1,9 +1,11 @@
+import { useState } from "react";
+
 type Props = { data: string[] };
 
 function List({ data }: Props) {
-  let index = 1;
+  const [index, setIndex] = useState(1);
   const handleClick = (i: number) => {
-    index = i;
+    setIndex(i);
   };
   return (
     <ul className="list-group">
