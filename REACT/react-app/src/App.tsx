@@ -6,7 +6,7 @@ function App() {
     console.log("Imprimiendo", elemento);
   };
 
-  const list: string[] = ["Wilmer", "Nicolas", "Carmona", "Alvarez"];
+  const list: string[] = [];
   const contenido = list.length !== 0 && (
     <List data={list} onSelect={handleSelect} />
   );
