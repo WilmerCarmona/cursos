@@ -6,7 +6,7 @@ function App() {
     console.log("Imprimiendo", elemento);
   };
 
-  const list: string[] = [];
+  const list: string[] = ["Wilmer", "Nicolas", "Carmona", "Alvarez"];
   const contenido = list.length ? (
     <List data={list} onSelect={handleSelect} />
   ) : (
@@ -15,6 +15,7 @@ function App() {
   return (
     <Card>
       <CardBody title="Ésto es un titulo" text="Ésto es un texto" />
+      {contenido}
     </Card>
   );
 }
