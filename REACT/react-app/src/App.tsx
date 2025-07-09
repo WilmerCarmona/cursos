@@ -8,6 +8,8 @@ function App() {
   const list = ["Wilmer", "Nicolas", "Carmona", "Alvarez", "Yesid"];
   return (
     <Card>
+      {"" && "string vacio"}
+      {"Hola" && "string lleno"}
       <CardBody title="Ésto es un titulo" text="Ésto es un texto" />
       <List data={list} onSelect={handleSelect} />
     </Card>
