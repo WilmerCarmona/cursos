@@ -7,10 +7,8 @@ function App() {
   };
 
   const list: string[] = ["Wilmer", "Nicolas", "Carmona", "Alvarez"];
-  const contenido = list.length ? (
+  const contenido = list.length !== 0 && (
     <List data={list} onSelect={handleSelect} />
-  ) : (
-    "No hay contenido para mostrar"
   );
   return (
     <Card>
