@@ -5,13 +5,16 @@ function App() {
   const handleSelect = (elemento: string) => {
     console.log("Imprimiendo", elemento);
   };
-  const list = ["Wilmer", "Nicolas", "Carmona", "Alvarez", "Yesid"];
+
+  const list: string[] = [];
+  const contenido = list.length ? (
+    <List data={list} onSelect={handleSelect} />
+  ) : (
+    "No hay contenido para mostrar"
+  );
   return (
     <Card>
-      {"" && "string vacio"}
-      {"Hola" && "string lleno"}
       <CardBody title="Ésto es un titulo" text="Ésto es un texto" />
-      <List data={list} onSelect={handleSelect} />
     </Card>
   );
 }
