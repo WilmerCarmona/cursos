@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Button from "./components/button";
 
 type Props = { data: string[]; onSelect?: (elemento: string) => void };
 function List({ data, onSelect }: Props) {
@@ -9,20 +8,17 @@ function List({ data, onSelect }: Props) {
     onSelect?.(elemento);
   };
   return (
-    <>
-      <ul className="list-group">
-        {data.map((elemento, i) => (
-          <li
-            onClick={() => handleClick(i, elemento)}
-            key={elemento}
-            className={`list-group-item ${index == i ? "active" : ""}`}
-          >
-            {elemento}
-          </li>
-        ))}
-      </ul>
-      <button>Enviar</button>
-    </>
+    <ul className="list-group">
+      {data.map((elemento, i) => (
+        <li
+          onClick={() => handleClick(i, elemento)}
+          key={elemento}
+          className={`list-group-item ${index == i ? "active" : ""}`}
+        >
+          {elemento}
+        </li>
+      ))}
+    </ul>
   );
 }
 

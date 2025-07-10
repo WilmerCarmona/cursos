@@ -1,11 +1,9 @@
 import { ReactNode } from "react";
 
-type Props = {
-  children: ReactNode;
-};
+type Props = { children: ReactNode };
 
-const button = ({ children }: Props) => {
+function Button({ children }: Props) {
   return <div>{children}</div>;
-};
+}
 
-export default button;
+export default Button;

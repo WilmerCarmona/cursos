@@ -1,4 +1,5 @@
 import Card, { CardBody } from "./components/Card";
+import Button from "./components/Button";
 import List from "./components/List";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <Card>
       <CardBody title="Ésto es un titulo" text="Ésto es un texto" />
       {contenido}
+      <Button>Enviar</Button>
     </Card>
   );
 }
