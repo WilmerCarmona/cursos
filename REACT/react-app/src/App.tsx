@@ -1,8 +1,11 @@
 import Card, { CardBody } from "./components/Card";
 import Button from "./components/Button";
 import List from "./components/List";
+import { useState } from "react";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(false);
+  const handleClick = () => setIsLoading(!isLoading);
   const handleSelect = (elemento: string) => {
     console.log("Imprimiendo", elemento);
   };
@@ -15,7 +18,9 @@ function App() {
     <Card>
       <CardBody title="Ésto es un titulo" text="Ésto es un texto" />
       {contenido}
-      <Button>Enviar</Button>
+      <Button isLoading={isLoading} onClick={handleClick}>
+        Enviar
+      </Button>
     </Card>
   );
 }
