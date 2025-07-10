@@ -8,9 +8,9 @@ function Button({ children, isLoading, onClick }: Props) {
       onClick={onClick}
       disabled={isLoading}
       type="button"
-      className="btn btn-primary"
+      className={`btn btn- ${isLoading ? "secondary" : "primary"}`}
     >
-      {children}
+      {isLoading ? "Cargando..." : children}
     </button>
   );
 }
