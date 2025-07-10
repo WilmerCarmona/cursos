@@ -4,7 +4,12 @@ type Props = { children: ReactNode; isLoading: boolean; onClick: () => void };
 
 function Button({ children, isLoading, onClick }: Props) {
   return (
-    <button type="button" className="btn btn-primary">
+    <button
+      onClick={onClick}
+      disabled={isLoading}
+      type="button"
+      className="btn btn-primary"
+    >
       {children}
     </button>
   );
