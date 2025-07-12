@@ -24,10 +24,12 @@ function App() {
   //       </Button>
   //     </Card>
   //   );
-  const AddGatos = () => setData([...data, "Gato"]);
+  const addGatos = () => setData([...data, "Gato"]);
+  const deltGatos = () => setData(data.slice(0, -1));
   return (
     <Card>
-      <Button onClick={AddGatos}>Agregar</Button>
+      <Button onClick={addGatos}>Agregar</Button>
+      <Button onClick={deltGatos}>Eliminar</Button>
       <List data={data} />
     </Card>
   );
