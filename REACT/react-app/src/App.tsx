@@ -24,11 +24,11 @@ function App() {
   //       </Button>
   //     </Card>
   //   );
-
+  const AddMinions = () => [...data, "Minion"];
   return (
     <Card>
-      {" "}
-      <List data={data} />{" "}
+      <Button onClick={AddMinions}>Agregar</Button>
+      <List data={data} />
     </Card>
   );
 }
