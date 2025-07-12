@@ -24,10 +24,10 @@ function App() {
   //       </Button>
   //     </Card>
   //   );
-  const AddMinions = () => [...data, "Minion"];
+  const AddGatos = () => setData([...data, "Gato"]);
   return (
     <Card>
-      <Button onClick={AddMinions}>Agregar</Button>
+      <Button onClick={AddGatos}>Agregar</Button>
       <List data={data} />
     </Card>
   );
