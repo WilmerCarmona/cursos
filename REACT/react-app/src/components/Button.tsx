@@ -1,10 +1,14 @@
 import { ReactNode } from "react";
 
 type Props = { children: ReactNode; isLoading?: boolean; onClick: () => void };
+const styles = {
+  backgroundColor: "blue",
+};
 
 function Button({ children, isLoading, onClick }: Props) {
   return (
     <button
+      style={styles}
       onClick={onClick}
       disabled={isLoading}
       type="button"
