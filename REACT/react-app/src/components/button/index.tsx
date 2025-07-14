@@ -8,7 +8,7 @@ function Button({ children, isLoading, onClick }: Props) {
       onClick={onClick}
       disabled={isLoading}
       type="button"
-      className={styles.button}
+      className={[styles.button, styles.padded].join(" ")}
       // className={`btn btn-${isLoading ? "secondary" : "primary"}`}
     >
       {isLoading ? "Cargando..." : children}
