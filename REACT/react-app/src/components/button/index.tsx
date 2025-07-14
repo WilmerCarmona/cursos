@@ -8,8 +8,11 @@ function Button({ children, isLoading, onClick }: Props) {
       onClick={onClick}
       disabled={isLoading}
       type="button"
-      className={[styles.button, styles.padded].join(" ")}
-      // className={`btn btn-${isLoading ? "secondary" : "primary"}`}
+      // className={[styles.button, styles.padded].join(" ")}
+      className={[
+        `btn btn-${isLoading ? "secondary" : "primary"}`,
+        styles.button,
+      ].join(" ")}
     >
       {isLoading ? "Cargando..." : children}
     </button>
