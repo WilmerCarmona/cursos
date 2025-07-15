@@ -28,8 +28,12 @@ function App() {
   const deltGatos = () => setData(data.slice(0, -1));
   return (
     <Card>
-      <Button onClick={addGatos}>Agregar</Button>
-      <Button onClick={deltGatos}>Eliminar</Button>
+      <Button isLoading={true} onClick={addGatos}>
+        Agregar
+      </Button>
+      <Button isLoading={false} onClick={deltGatos}>
+        Eliminar
+      </Button>
       <List data={data} />
     </Card>
   );
