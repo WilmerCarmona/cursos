@@ -2,10 +2,14 @@ import { ReactNode } from "react";
 import styles from "./Button.module.css";
 import styled from "styled-components";
 type Props = { children: ReactNode; isLoading?: boolean; onClick: () => void };
-const Btn = styled.button``;
+const Btn = styled.button`
+  background-color: red;
+  margin: 10px;
+  padding: 25px 30px;
+`;
 function Button({ children, isLoading, onClick }: Props) {
   return (
-    <button
+    <Btn
       onClick={onClick}
       disabled={isLoading}
       type="button"
@@ -16,7 +20,7 @@ function Button({ children, isLoading, onClick }: Props) {
       ].join(" ")}
     >
       {isLoading ? "Cargando..." : children}
-    </button>
+    </Btn>
   );
 }
 
